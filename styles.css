@@ -7,25 +7,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-html {
+  }
+  
+  html {
     font-size: 16px; /* Base font size for rem calculations */
-}
-
-body {
+  }
+  
+  body {
     height: 100%;
     font-family: "Work Sans", sans-serif;
     background-color: #f0f2f5;
     color: #333;
     overflow-x: hidden; /* Prevent horizontal overflow */
-}
-
-/* ===========================
-   Header and Navigation
-   =========================== */
-
-header {
+  }
+  
+  /* ===========================
+     Header and Navigation
+     =========================== */
+  
+  header {
     height: 5.5vh;
     background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
     display: flex;
@@ -35,9 +35,9 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-}
-
-nav {
+  }
+  
+  nav {
     width: 90%;
     display: flex;
     justify-content: space-around;
@@ -46,13 +46,13 @@ nav {
     flex-wrap: nowrap; /* Prevent wrapping */
     overflow-x: auto; /* Enable horizontal scrolling if needed */
     scrollbar-width: none; /* Hide scrollbar in Firefox */
-}
-
-nav::-webkit-scrollbar {
+  }
+  
+  nav::-webkit-scrollbar {
     display: none; /* Hide scrollbar in WebKit browsers */
-}
-
-nav a {
+  }
+  
+  nav a {
     color: #fff;
     text-decoration: none;
     padding: 0.75rem 1.25rem; /* 12px 20px */
@@ -68,30 +68,30 @@ nav a {
     height: 2.5rem; /* 40px */
     white-space: nowrap; /* Prevent text wrapping */
     flex-shrink: 0; /* Prevent shrinking */
-}
-
-nav a i {
+  }
+  
+  nav a i {
     margin-right: 0.75rem; /* 12px */
     font-size: 1.3rem;
-}
-
-nav a:hover {
+  }
+  
+  nav a:hover {
     background-color: rgba(255, 255, 255, 0.3);
     transform: translateY(-0.2rem); /* -3px */
     box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.2); /* 0 4px 8px */
-}
-
-/* Active Navigation Link */
-nav a.active {
+  }
+  
+  /* Active Navigation Link */
+  nav a.active {
     background-color: rgba(255, 255, 255, 0.5);
     color: #000;
-}
-
-/* ===========================
-   Content Area
-   =========================== */
-
-.content {
+  }
+  
+  /* ===========================
+     Content Area
+     =========================== */
+  
+  .content {
     min-height: 94.5vh;
     padding: 1% 1%; /* 1% padding on both sides */
     overflow-y: auto;
@@ -100,61 +100,61 @@ nav a.active {
     justify-content: center;
     background: linear-gradient(135deg, #b6b9bb, #82c0ec);
     transition: padding 0.3s ease, align-items 0.3s ease, justify-content 0.3s ease;
-}
-
-section {
+  }
+  
+  section {
     display: none;
     width: 100%;
     max-width: 98%; /* Fits within 1% padding on each side */
     animation: fadeIn 0.5s;
     padding: 1.25rem; /* 20px */
-}
-
-/* Handle Active Sections */
-section.active {
+  }
+  
+  /* Handle Active Sections */
+  section.active {
     display: block;
-}
-
-/* ===========================
-   Thank You Section
-   =========================== */
-
-#thank-you.active {
+  }
+  
+  /* ===========================
+     Thank You Section
+     =========================== */
+  
+  #thank-you.active {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: #0a0000;
     height: 100%;
-}
-
-#thank-you h1 {
+  }
+  
+  #thank-you h1 {
     font-size: 2rem;
     margin-bottom: 1.25rem; /* 20px */
-}
-
-#thank-you p {
+  }
+  
+  #thank-you p {
     font-size: 1.3rem;
     max-width: 43.75rem; /* 700px */
     text-align: center;
-}
-
-/* ===========================
-   Personal Details Section
-   =========================== */
-
-#personal-details.active {
+  }
+  
+  /* ===========================
+     Personal Details Section
+     =========================== */
+  
+  #personal-details.active {
     display: block;
-}
-
-#personal-details .inner-container {
+  }
+  
+  #personal-details .inner-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-}
-
-#personal-details img {
+  }
+  
+  #personal-details img {
     width: 12.5rem; /* 200px */
     height: 12.5rem; /* 200px */
     border-radius: 50%;
@@ -162,33 +162,33 @@ section.active {
     margin-bottom: 1.25rem; /* 20px */
     border: 0.25rem solid #4711cd; /* 4px */
     box-shadow: 0 0.25rem 0.5rem rgba(19, 83, 179, 0.2); /* 0 4px 8px */
-}
-
-#personal-details h2 {
+  }
+  
+  #personal-details h2 {
     margin-bottom: 0.625rem; /* 10px */
     font-size: 2.2rem;
     color: #000;
     text-shadow: 0.0625rem 0.0625rem 0.125rem rgba(0,0,0,0.5); /* 1px 1px 2px */
-}
-
-#personal-details p {
+  }
+  
+  #personal-details p {
     max-width: 50rem; /* 800px */
     margin-bottom: 2.5rem; /* 40px */
     line-height: 1.6;
     font-size: 1.2rem;
     color: #000;
-}
-
-.personal-info {
+  }
+  
+  .personal-info {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     gap: 1.25rem; /* 20px */
     margin-bottom: 1.875rem; /* 30px */
     width: 100%;
-}
-
-.info-card {
+  }
+  
+  .info-card {
     background-color: #fff;
     height: 5.625rem; /* 90px */
     border-radius: 0.625rem; /* 10px */
@@ -198,45 +198,48 @@ section.active {
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
     padding: 0.625rem; /* 10px */
-}
-
-.info-card:hover {
+  }
+  
+  .info-card:hover {
     transform: translateY(-0.3125rem); /* -5px */
     box-shadow: 0 0.375rem 1rem rgba(0,0,0,0.2); /* 0 6px 16px */
-}
-
-.info-card h3 {
+  }
+  
+  .info-card h3 {
     margin-bottom: 0.625rem; /* 10px */
     color: #2575fc;
     font-size: 1.3rem;
-}
-
-.info-card p {
+  }
+  
+  .info-card p {
     font-size: 0.9rem;
     color: #555;
-}
+  }
+  
+  /* ===========================
+     Educational Background & Experience
+     =========================== */
+  
+  /* CSS Custom Properties to control timeline item size */
 
-/* ===========================
-   Educational Background & Experience
-   =========================== */
-
-.timeline-container {
+  
+  .timeline-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-}
-
-.timeline {
+  }
+  
+  .timeline {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
     margin-bottom: 0.625rem; /* 10px */
-}
-
-.timeline::before {
+  }
+  
+  .timeline::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -246,39 +249,36 @@ section.active {
     background-color: #645cf1;
     transform: translateY(-50%);
     border-radius: 0.125rem; /* 2px */
-}
-
-.timeline-item {
-    width: 6.875rem; /* 110px */
-    height: 3.125rem; /* 50px */
-    background-color: #1a12b1;
+  }
+  
+  .timeline-item {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
     display: flex;
     align-items: center;
     justify-content: center;
     color: #fff;
     font-weight: 600;
     position: relative;
-    font-size: 0.75rem; /* Base font size */
+    font-size: 0.75rem;
     transition: background-color 0.3s, transform 0.3s, font-weight 0.3s;
     cursor: pointer;
     z-index: 1;
     text-align: center;
     padding: 0.3125rem; /* 5px */
-    border-radius: 0.3125rem; /* 5px */
+    border-radius: 1.4125rem; /* 5px */   
     flex-shrink: 0;
-}
-
-.timeline-item.active {
-    background-color: #ff6347;
+  }
+  
+  .timeline-item.active {
+    background: linear-gradient(135deg, #ce8909 0%, #10c228 100%);
     font-weight: 700;
-    transform: scale(1.05);
-}
-
-/* ===========================
-   Slider Styles
-   =========================== */
-
-.slider {
+  }
+  
+  /* ===========================
+     Slider Styles
+     =========================== */
+  
+  .slider {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -286,9 +286,9 @@ section.active {
     width: 100%;
     position: relative;
     margin-bottom: 0.625rem; /* 10px */
-}
-
-.slider img {
+  }
+  
+  .slider img {
     width: 100%;
     height: auto;
     max-height: 18.75rem; /* 300px */
@@ -297,9 +297,9 @@ section.active {
     box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.2); /* 0 4px 12px */
     object-fit: cover;
     border-color: #1a12b1;
-}
-
-.slider button {
+  }
+  
+  .slider button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -313,26 +313,26 @@ section.active {
     box-shadow: 0 0.125rem 0.375rem rgba(0,0,0,0.2); /* 0 2px 6px */
     z-index: 2;
     border-radius: 50%; /* Circular buttons */
-}
-
-.slider button:hover {
+  }
+  
+  .slider button:hover {
     background-color: rgba(149, 122, 218, 0.8);
     transform: translateY(-50%) scale(1.1);
-}
-
-.prev {
+  }
+  
+  .prev {
     left: 0.625rem; /* 10px */
-}
-
-.next {
+  }
+  
+  .next {
     right: 0.625rem; /* 10px */
-}
-
-/* ===========================
-   Content Description
-   =========================== */
-
-.description {
+  }
+  
+  /* ===========================
+     Content Description
+     =========================== */
+  
+  .description {
     width: 100%;
     background-color: #fff;
     border-bottom-left-radius: 0.625rem; /* 10px */
@@ -340,46 +340,49 @@ section.active {
     box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.1); /* 0 4px 12px */
     padding: 0.625rem 1.25rem; /* 10px 20px */
     text-align: center;
-}
-
-.description h3 {
+  }
+  
+  .description h3 {
     margin-bottom: 0.625rem; /* 10px */
     color: #2575fc;
     font-size: 1.8rem;
-}
-
-.description p {
+  }
+  
+  /* Updated description paragraphs: left-aligned with extra spacing between paragraphs */
+  .description p {
     font-size: 1.1rem;
     color: #555;
-}
-
-/* ===========================
-   Projects Section
-   =========================== */
-
-.projects-container {
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+  
+  /* ===========================
+     Projects Section
+     =========================== */
+  
+  .projects-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-}
-
-.projects-container h2 {
+  }
+  
+  .projects-container h2 {
     margin-bottom: 1.25rem; /* 20px */
     color: #000;
     font-size: 2.5rem;
     text-align: center;
-}
-
-.projects-grid {
+  }
+  
+  .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr)); /* 250px */
     gap: 1.5625rem; /* 25px */
     width: 100%;
     margin-top: 1.25rem; /* 20px */
-}
-
-.project-card {
+  }
+  
+  .project-card {
     background-color: #fff;
     border-radius: 0.625rem; /* 10px */
     overflow: hidden;
@@ -389,324 +392,371 @@ section.active {
     display: flex;
     flex-direction: column;
     height: 100%;
-}
-
-.project-card:hover {
+  }
+  
+  .project-card:hover {
     transform: translateY(-0.3125rem); /* -5px */
     opacity: 0.99;
     box-shadow: 0 0.375rem 1rem rgba(0,0,0,0.2); /* 0 6px 16px */
-}
-
-.project-card img {
+  }
+  
+  /* New Styles for Project Sliders */
+  .project-card .project-slider {
+    position: relative;
     width: 100%;
-    height: 11.25rem; /* 180px */
+    padding-bottom: 48%; /* 16:9 ratio */
+    overflow: hidden;
+    border-radius: 0.625rem;
+    box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.2);
+  }
+  
+  .project-card .project-slider img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-}
-
-.project-card .project-info {
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+  }
+  
+  .project-slider img.active {
+    opacity: 1;
+  }
+  
+  .project-card .project-info {
     padding: 0.9375rem; /* 15px */
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.project-card .project-info h3 {
+  }
+  
+  .project-card .project-info h3 {
     margin-bottom: 0.625rem; /* 10px */
     color: #000;
-    font-size: 1.3rem;
-}
-
-.project-card .project-info p {
-    font-size: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .project-card .project-info p {
+    font-size: 1.1rem;
     color: #555;
-}
-
+  }
+  
+  .project-card .project-info h4 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: #000;
+    font-weight: 600;
+  }
+  
+  .project-card .project-info ul {
+    list-style: disc inside;
+    margin: 0;
+    margin-bottom: 1rem;
+    padding: 0;
+    text-align: justify;
+  }
+  
+  .project-card .project-info ul li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+    font-size: 0.8rem;
+    color: #333;
+    text-align: justify;
+  }
+  
+  .project-card .project-info ul li strong {
+    color: #160e81;
+  }
+  
+  .project-card .project-info p {
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+    font-size: 0.8rem;
+    color: #555;
+    text-align: justify;
+  }
+  
 /* ===========================
    Resume Section
    =========================== */
 
-#resume.active {
-    display: block;
-}
-
-#resume .inner-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
-#resume h2 {
-    margin-bottom: 1.25rem; /* 20px */
-    color: #2575fc;
-    font-size: 2.5rem;
-    text-align: center;
-}
-
-#resume iframe {
-    width: 100%;
-    height: 70vh;
-    border: none;
-    border-radius: 0.625rem; /* 10px */
-    box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.2); /* 0 4px 12px */
-    margin-bottom: 1.25rem; /* 20px */
-}
-
-#resume a {
-    display: inline-block;
-    padding: 0.75rem 1.5625rem; /* 12px 25px */
-    background-color: #2575fc;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 0.3125rem; /* 5px */
-    transition: background-color 0.3s, transform 0.3s;
-    font-weight: 600;
-    font-size: 1.1rem;
-}
-
-#resume a:hover {
-    background-color: #575757;
-    transform: scale(1.05);
-}
-
-/* ===========================
-   Responsive Styles
-   =========================== */
-
-/* ===========================
-   Mobile Devices (320px and up)
-   =========================== */
-@media (max-width: 767px) {
+   #resume,
+   #resume .inner-container {
+     /* Set a fixed height for the resume section and its container */
+     height: 85vh;  /* You can adjust this value as needed (e.g., 100vh or a pixel value) */
+   }
+   
+   #resume .inner-container .resume-container {
+     width: 100%;
+     max-width: 100%;
+     /* Make the resume container fill the parent's height */
+     height: 85vh;
+     border: 1px solid #ddd;
+     border-radius: 0.625rem;
+     overflow: hidden;
+     box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.2);
+     margin-bottom: 1.25rem;
+     position: relative;
+   }
+   
+   .resume-container iframe {
+     width: 100%;
+     height: 100%;
+     border: none;
+     scrollbar-width: thin;
+     scrollbar-color: #2575fc #f0f2f5;
+   }
+   
+   /* Remove or override any media query rules that adjust .resume-container height */
+   @media (max-width: 767px),
+          (min-width: 768px) and (max-width: 1024px),
+          (min-width: 1025px) and (max-width: 1440px),
+          (min-width: 1441px) {
+     .resume-container {
+       height: 100%; /* Now always fill the 100vh defined on #resume/.inner-container */
+     }
+   }
+  /* ===========================
+     Responsive Styles
+     =========================== */
+  
+  /* Mobile Devices (320px and up) */
+  @media (max-width: 767px) {
     nav a {
-        min-width: 120px; /* Reduced min-width */
-        font-size: 0.9rem; /* Reduced font size */
-        padding: 0.625rem 0.938rem; /* 10px 15px */
+      min-width: 120px;
+      font-size: 0.9rem;
+      padding: 0.625rem 0.938rem;
     }
-
+  
     nav a i {
-        margin-right: 0.375rem; /* 6px */
-        font-size: 1.1rem; /* Reduced icon size */
+      margin-right: 0.375rem;
+      font-size: 1.1rem;
     }
-
+  
     .info-card {
-        flex: 1 1 150px; /* Reduced flex-basis */
-        max-width: 250px; /* Reduced max-width */
-        height: auto; /* Allow height to adjust based on content */
-        padding: 0.625rem; /* 10px */
+      flex: 1 1 150px;
+      max-width: 250px;
+      height: auto;
+      padding: 0.625rem;
     }
-
+  
     .timeline-item {
-        width: 5.625rem; /* 90px */
-        height: 2.5rem; /* 40px */
-        font-size: 0.65rem; /* Smaller font size */
+      width: 5.625rem;
+      height: 2.5rem;
+      font-size: 0.65rem;
     }
-
+  
     .description h3 {
-        font-size: 1.5rem; /* Reduced font size */
+      font-size: 1.5rem;
     }
-
+  
     .description p {
-        font-size: 1rem; /* Reduced font size */
+      font-size: 1rem;
     }
-
+  
     .project-card img {
-        height: 9.375rem; /* 150px */
+      height: 9.375rem;
     }
-
+  
+    .resume-container {
+      height: 60vh;
+    }
+  
     #resume iframe {
-        height: 60vh; /* Reduced height */
+      height: 100%;
     }
-
-    /* ===========================
-       Personal Details Specific Adjustments
-       =========================== */
-
-    /* Targeting Personal Details Section on Mobile */
+  
+    /* Personal Details Adjustments */
     #personal-details p {
-        font-size: 0.9rem; /* Further reduce font size */
+      font-size: 0.9rem;
     }
-
+  
     #personal-details h2 {
-        font-size: 1.65rem; /* Reduce heading font size */
+      font-size: 1.65rem;
     }
-}
-
-/* ===========================
-   Tablets (768px to 1024px)
-   =========================== */
-@media (min-width: 768px) and (max-width: 1024px) {
+  }
+  
+  /* Tablets (768px to 1024px) */
+  @media (min-width: 768px) and (max-width: 1024px) {
     nav a {
-        min-width: 180px;
-        font-size: 1rem;
-        padding: 0.75rem 1.25rem; /* 12px 20px */
+      min-width: 180px;
+      font-size: 1rem;
+      padding: 0.75rem 1.25rem;
     }
-
+  
     .info-card {
-        flex: 1 1 200px;
-        max-width: 300px;
+      flex: 1 1 200px;
+      max-width: 300px;
     }
-
+  
     .timeline-item {
-        width: 6.25rem; /* 100px */
-        height: 2.8125rem; /* 45px */
-        font-size: 0.7rem; /* Slightly reduced font size */
+      width: 6.25rem;
+      height: 2.8125rem;
+      font-size: 0.7rem;
     }
-
+  
     .description h3 {
-        font-size: 1.6rem; /* Reduced font size */
+      font-size: 1.6rem;
     }
-
+  
     .description p {
-        font-size: 1rem; /* Reduced font size */
+      font-size: 1rem;
     }
-
+  
     .project-card img {
-        height: 10rem; /* 160px */
+      height: 10rem;
     }
-
+  
+    .resume-container {
+      height: 65vh;
+    }
+  
     #resume iframe {
-        height: 65vh; /* Reduced height */
+      height: 100%;
     }
-
-    /* ===========================
-       Personal Details Specific Adjustments
-       =========================== */
-
-    /* Targeting Personal Details Section on Tablets */
+  
+    /* Personal Details Adjustments */
     #personal-details p {
-        font-size: 1rem; /* Reduce font size */
+      font-size: 1rem;
     }
-
+  
     #personal-details h2 {
-        font-size: 1.75rem; /* Reduce heading font size */
+      font-size: 1.75rem;
     }
-}
-
-/* ===========================
-   Laptops (1025px to 1440px)
-   =========================== */
-@media (min-width: 1025px) and (max-width: 1440px) {
+  }
+  
+  /* Laptops (1025px to 1440px) */
+  @media (min-width: 1025px) and (max-width: 1440px) {
     nav a {
-        min-width: 200px;
-        font-size: 0.825rem; /* 75% of 1.1rem */
-        padding: 0.65625rem 1.125rem; /* 10.5px 18px */
+      min-width: 200px;
+      font-size: 0.825rem;
+      padding: 0.65625rem 1.125rem;
     }
-
+  
     .info-card {
-        flex: 1 1 220px;
-        max-width: 350px;
+      flex: 1 1 220px;
+      max-width: 350px;
     }
-
+  
     .timeline-item {
-        width: 7.5rem; /* 120px */
-        height: 3.4375rem; /* 55px */
-        font-size: 0.75rem; /* 75% of 1rem */
+      width: 7.5rem;
+      height: 3.4375rem;
+      font-size: 0.75rem;
     }
-
+  
     .description h3 {
-        font-size: 1.5rem; /* 75% of 2rem */
+      font-size: 1.5rem;
     }
-
+  
     .description p {
-        font-size: 0.825rem; /* 75% of 1.1rem */
+      font-size: 0.825rem;
     }
-
+  
     .project-card img {
-        height: 11.25rem; /* 180px */
+      height: 11.25rem;
     }
-
+  
+    .resume-container {
+      height: 70vh;
+    }
+  
     #resume iframe {
-        height: 70vh; /* Reduced height */
+      height: 100%;
     }
-
-    /* ===========================
-       Personal Details Specific Adjustments
-       =========================== */
-
-    /* Targeting Personal Details Section on Laptops */
+  
+    #resume a {
+      font-size: 1rem;
+      padding: 0.6rem 1.4rem;
+    }
+  
+    /* Personal Details Adjustments */
     #personal-details p {
-        font-size: 0.9rem; /* Further reduce font size */
+      font-size: 0.9rem;
     }
-
+  
     #personal-details h2 {
-        font-size: 1.65rem; /* Reduce heading font size */
+      font-size: 1.65rem;
     }
-}
-
-/* ===========================
-   Desktops (1441px and up)
-   =========================== */
-@media (min-width: 1441px) {
+  }
+  
+  /* Desktops (1441px and up) */
+  @media (min-width: 1441px) {
     nav a {
-        min-width: 220px;
-        font-size: 0.9rem; /* 75% of 1.2rem */
-        padding: 1rem 1.3125rem; /* 16px 21px */
+      min-width: 220px;
+      font-size: 0.9rem;
+      padding: 1rem 1.3125rem;
     }
-
+  
     .info-card {
-        flex: 1 1 250px;
-        max-width: 400px;
+      flex: 1 1 250px;
+      max-width: 400px;
     }
-
+  
     .timeline-item {
-        width: 8.75rem; /* 140px */
-        height: 3.75rem; /* 60px */
-        font-size: 0.6rem; /* 75% of 0.8rem */
+      width: 18rem;
+      height: 2.5rem;
+      font-size: em;
     }
-
+  
     .description h3 {
-        font-size: 1.65rem; /* 75% of 2.2rem */
+      font-size: 1.65rem;
     }
-
+  
     .description p {
-        font-size: 0.9rem; /* 75% of 1.2rem */
+      font-size: 0.9rem;
     }
-
+  
     .project-card img {
-        height: 12.5rem; /* 200px */
+      height: 12.5rem;
     }
-
+  
+    .resume-container {
+      height: 75vh;
+    }
+  
     #resume iframe {
-        height: 75vh; /* Reduced height */
+      height: 100%;
     }
-
-    /* ===========================
-       Personal Details Specific Adjustments
-       =========================== */
-
-    /* Targeting Personal Details Section on Desktops */
+  
+    #resume a {
+      font-size: 1.1rem;
+      padding: 0.75rem 1.5625rem;
+    }
+  
+    /* Personal Details Adjustments */
     #personal-details p {
-        font-size: 0.9rem; /* Further reduce font size */
+      font-size: 0.9rem;
     }
-
+  
     #personal-details h2 {
-        font-size: 1.65rem; /* Reduce heading font size */
+      font-size: 1.65rem;
     }
-}
-
-/* ===========================
-   Timeline Text Responsiveness
-   =========================== */
-
-/* Laptops (1025px to 1440px) */
-@media (min-width: 1025px) and (max-width: 1440px) {
+  }
+  
+  /* Timeline Text Responsiveness */
+  /* Laptops */
+  @media (min-width: 1025px) and (max-width: 1440px) {
     .timeline-item {
-        font-size: 0.85rem; /* Slightly larger on laptops */
+      font-size: 0.85rem;
     }
-}
-
-/* Desktops (1441px and up) */
-@media (min-width: 1441px) {
+  }
+  
+  /* Desktops */
+  @media (min-width: 1441px) {
     .timeline-item {
-        font-size: 1rem; /* Larger font on desktops */
+      font-size: 1rem;
     }
-}
-
-/* ===========================
-   Animation
-   =========================== */
-@keyframes fadeIn {
+  }
+  
+  /* ===========================
+     Animation
+     =========================== */
+  @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
-}
+  }
+  

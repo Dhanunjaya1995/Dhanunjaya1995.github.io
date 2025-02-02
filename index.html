@@ -1,181 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stylish Portfolio</title>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- External CSS -->
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stylish Portfolio</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Header Navigation -->
-    <header>
-        <nav>
-            <a href="#" data-section="personal-details"><i class="fas fa-user"></i> Personal</a>
-            <a href="#" data-section="educational-background"><i class="fas fa-graduation-cap"></i> Education</a>
-            <a href="#" data-section="experience"><i class="fas fa-briefcase"></i> Experience</a>
-            <a href="#" data-section="company-projects"><i class="fas fa-building"></i> Company Projects</a>
-            <a href="#" data-section="freelance-projects"><i class="fas fa-rocket"></i> Freelance Projects</a>
-            <a href="#" data-section="resume"><i class="fas fa-file-alt"></i> Resume</a>
-        </nav>
-    </header>
+  <!-- Header Navigation -->
+  <header>
+    <nav>
+      <a href="#" data-section="personal-details"><i class="fas fa-user"></i> Personal</a>
+      <a href="#" data-section="educational-background"><i class="fas fa-graduation-cap"></i> Education</a>
+      <a href="#" data-section="experience"><i class="fas fa-briefcase"></i> Experience</a>
+      <a href="#" data-section="company-projects"><i class="fas fa-building"></i> Company Projects</a>
+      <a href="#" data-section="freelance-projects"><i class="fas fa-rocket"></i> Freelance Projects</a>
+      <a href="#" data-section="resume"><i class="fas fa-file-alt"></i> Resume</a>
+    </nav>
+  </header>
 
-    <!-- Content Area -->
-    <div class="content">
-        <!-- Thank You Section -->
-        <section id="thank-you" class="active">
-            <h1>Thank You for Reaching Me!</h1>
-            <p>I appreciate your interest in my portfolio. Please select a section above to learn more about my work and experiences.</p>
-        </section>
+  <!-- Content Area -->
+  <div class="content">
+    <!-- Thank You Section -->
+    <section id="thank-you" class="active">
+      <h1>Thank You for Reaching Me!</h1>
+      <p>I appreciate your interest in my portfolio. Please select a section above to learn more about my work and experiences.</p>
+    </section>
 
-        <!-- Personal Details Section -->
-        <section id="personal-details">
-            <div class="inner-container">
-                <img src="profile.jpg" alt="Profile Picture">
-                <h2>Dhanunjaya Rao Lukalapu</h2>
-                <p>Passionate Web Developer with expertise in creating dynamic and responsive websites. Skilled in HTML, CSS, JavaScript, and modern frameworks. Committed to delivering high-quality solutions that enhance user experience and drive business success.</p>
-                
-                <!-- Personal Information Cards -->
-                <div class="personal-info">
-                    <div class="info-card">
-                        <h3>Email</h3>
-                        <p>dhanu140699@gmail.com</p>
-                    </div>
-                    <div class="info-card">
-                        <h3>Phone</h3>
-                        <p>+39 3497463711</p>
-                    </div>
-                    <div class="info-card">
-                        <h3>LinkedIn</h3>
-                        <p><a href="https://linkedin.com/in/johndoe" target="_blank">www.linkedin.com/in/dhanunjay1999</a></p>
-                    </div>
-                    <div class="info-card">
-                        <h3>Location</h3>
-                        <p>Milano, Italy</p>
-                    </div>
-                </div>
+    <!-- Personal Details Section -->
+    <section id="personal-details">
+      <div class="inner-container">
+        <img src="profile.jpg" alt="Profile Picture">
+        <h2>Dhanunjaya Rao Lukalapu</h2>
+        <p>Experienced Data Analytics & Automation Engineer with expertise in data engineering, automation, and front-end development. Skilled in designing interactive web applications that integrate with industrial systems, streamlining operations through automation. Proficient in Python, SQL, JavaScript, and cloud technologies to develop scalable solutions for data collection, visualization, and process optimization.</p>
+        
+        <!-- Personal Information Cards -->
+        <div class="personal-info">
+          <div class="info-card">
+            <h3>Email</h3>
+            <p>lukalapudhanunjay@gmail.com</p>
+          </div>
+          <div class="info-card">
+            <h3>Phone</h3>
+            <p>+39 3497463711</p>
+          </div>
+          <div class="info-card">
+            <h3>LinkedIn</h3>
+            <p><a href="https://linkedin.com/in/dhanunjay1999" target="_blank">www.linkedin.com/in/dhanunjay1999</a></p>
+          </div>
+          <div class="info-card">
+            <h3>Location</h3>
+            <p>Milano, Italy</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Educational Background Section -->
+    <section id="educational-background">
+      <div class="timeline-container">
+        <div class="timeline" id="edu-timeline">
+          <div class="timeline-item" data-index="0">December 2022 - December 2023</div>
+          <div class="timeline-item" data-index="1">September 2019 - December 2021</div>
+          <div class="timeline-item active" data-index="2">June 2013 - June 2017</div>
+          
+        </div>
+        <div class="slider" id="edu-slider">
+          <button class="prev" onclick="prevSlide('edu')"><i class="fas fa-chevron-left"></i></button>
+          <img src="lingayas.jpg" alt="University Image 1" id="edu-image">
+          <button class="next" onclick="nextSlide('edu')"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="description" id="edu-description">
+          <h3>Lingayas University</h3>
+          <p>Bachelor of Science in Computer Science. Focused on software development, algorithms, and data structures.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+      <div class="timeline-container">
+        <div class="timeline" id="exp-timeline">
+          <div class="timeline-item active" data-index="0">June 2024 - Present</div>        
+          <div class="timeline-item" data-index="1">April 2023 - April 2024</div>
+          <div class="timeline-item" data-index="2">October 2021 - March 2023</div>
+          
+        </div>
+        <div class="slider" id="exp-slider">
+          <button class="prev" onclick="prevSlide('exp')"><i class="fas fa-chevron-left"></i></button>
+          <img src="exp1.jpg" alt="Company Image 1" id="exp-image">
+          <button class="next" onclick="nextSlide('exp')"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="description" id="exp-description">
+          <h3>Alten, Dematic DIQ (Aspiag Project)</h3>
+          <p>Managed data pipeline between ASPIAG (Despar) and Dematic using Dematic IQ software and Data factory on Databricks.
+          Implemented ETL tasks with Node-Red and Data Factory.
+          Developed custom views with Oracle SQL queries, integrating Python.
+          Visualized analysis results using PowerBI and Tableau, creating insightful dashboards for stakeholders.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Company Projects Section -->
+    <section id="company-projects">
+      <div class="projects-container">
+        <h2>Company Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-slider">
+              <img src="first1.jpg" alt="Project Alpha Image 1" class="active">
+              <img src="first2.jpg" alt="Project Alpha Image 2">
+              <img src="first3.jpg" alt="Project Alpha Image 3">
+              <img src="first4.jpg" alt="Project Alpha Image 4">
+              <img src="first5.jpg" alt="Project Alpha Image 5">
             </div>
-        </section>
-
-        <!-- Educational Background Section -->
-        <section id="educational-background">
-            <div class="timeline-container">
-                <div class="timeline" id="edu-timeline">
-                    <div class="timeline-item active" data-index="0">June, 2013<br>June, 2017</div>
-                    <div class="timeline-item" data-index="1">September, 2019<br>December, 2021</div>
-                    <div class="timeline-item" data-index="2">December, 2022<br>December, 2023</div>
-                </div>
-                <div class="slider" id="edu-slider">
-                    <button class="prev" onclick="prevSlide('edu')"><i class="fas fa-chevron-left"></i></button>
-                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y29tcGFueXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&q=80&w=400" alt="University Image" id="edu-image">
-                    <button class="next" onclick="nextSlide('edu')"><i class="fas fa-chevron-right"></i></button>
-                </div>
-                <div class="description" id="edu-description">
-                    <h3>University of Technology</h3>
-                    <p>Bachelor of Science in Computer Science. Focused on software development, algorithms, and data structures.</p>
-                </div>
+            <div class="project-info">
+              <h3>Project Alpha</h3>
+              <p>Developed an internal tool to streamline project management processes, enhancing team productivity by 30%.</p>
             </div>
-        </section>
-
-        <!-- Experience Section -->
-        <section id="experience">
-            <div class="timeline-container">
-                <div class="timeline" id="exp-timeline">
-                    <div class="timeline-item active" data-index="0">October,2021<br>March, 2023</div>
-                    <div class="timeline-item" data-index="1">April, 2023<br>April,2024</div>
-                    <div class="timeline-item" data-index="2">June, 2024<br>Present</div>
-                </div>
-                <div class="slider" id="exp-slider">
-                    <button class="prev" onclick="prevSlide('exp')"><i class="fas fa-chevron-left"></i></button>
-                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y29tcGFueXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&q=80&w=400" alt="Company Image" id="exp-image">
-                    <button class="next" onclick="nextSlide('exp')"><i class="fas fa-chevron-right"></i></button>
-                </div>
-                <div class="description" id="exp-description">
-                    <h3>Tech Solutions Inc.</h3>
-                    <p>Worked as a Front-End Developer, creating responsive web applications and collaborating with designers to enhance user experience.</p>
-                </div>
+          </div>
+          <div class="project-card">
+            <div class="project-slider">
+              <img src="project2-1.jpg" alt="Project Beta Image 1" class="active">
+              <img src="project2-2.jpg" alt="Project Beta Image 2">
+              <img src="project2-3.jpg" alt="Project Beta Image 3">
             </div>
-        </section>
-
-        <!-- Company Projects Section -->
-        <section id="company-projects">
-            <div class="projects-container">
-                <h2>Company Projects</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=180&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvamVjdCUyMGFscGhhfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&q=80&w=300" alt="Project Alpha">
-                        <div class="project-info">
-                            <h3>Project Alpha</h3>
-                            <p>Developed an internal tool to streamline project management processes, enhancing team productivity by 30%.</p>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=180&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cHJvamVjdCUyMGJldGF8ZW58MHx8MHx8&ixlib=rb-1.2.1&q=80&w=300" alt="Project Beta">
-                        <div class="project-info">
-                            <h3>Project Beta</h3>
-                            <p>Implemented a responsive dashboard for data visualization and reporting, improving data accessibility for stakeholders.</p>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=180&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cHJvamVjdCUyMGdhbW1hfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&q=80&w=300" alt="Project Gamma">
-                        <div class="project-info">
-                            <h3>Project Gamma</h3>
-                            <p>Created a scalable API for mobile applications, reducing server response time by 25%.</p>
-                        </div>
-                    </div>
-                    <!-- Add more project cards as needed -->
-                </div>
+            <div class="project-info">
+              <h3>Project Beta</h3>
+              <p>Implemented a responsive dashboard for data visualization and reporting, improving data accessibility for stakeholders.</p>
             </div>
-        </section>
-
-        <!-- Freelance Projects Section -->
-        <section id="freelance-projects">
-            <div class="projects-container">
-                <h2>Freelance Projects</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=180&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGxlYXN1cmV8ZW58MHx8MHx8&ixlib=rb-1.2.1&q=80&w=300" alt="Freelance Site">
-                        <div class="project-info">
-                            <h3>Freelance Portfolio</h3>
-                            <p>Designed and developed a personal portfolio website for a freelance photographer, showcasing their work and services.</p>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=180&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZWNvbW1lcmNlJTIwcGxhdGZvcm18ZW58MHx8MHx8&ixlib=rb-1.2.1&q=80&w=300" alt="E-commerce Platform">
-                        <div class="project-info">
-                            <h3>E-commerce Platform</h3>
-                            <p>Built an online store with integrated payment gateways and inventory management, increasing sales by 40%.</p>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=180&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YmxvZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&q=80&w=300" alt="Blog Website">
-                        <div class="project-info">
-                            <h3>Tech Blog</h3>
-                            <p>Developed a responsive blog website using WordPress and customized themes, attracting over 10k monthly visitors.</p>
-                        </div>
-                    </div>
-                    <!-- Add more project cards as needed -->
-                </div>
+          </div>
+          <div class="project-card">
+            <div class="project-slider">
+              <img src="project3-1.jpg" alt="Project Gamma Image 1" class="active">
+              <img src="project3-2.jpg" alt="Project Gamma Image 2">
+              <img src="project3-3.jpg" alt="Project Gamma Image 3">
             </div>
-        </section>
-
-        <!-- Resume Section -->
-        <section id="resume">
-            <div class="inner-container">
-                <h2>My Resume</h2>
-                <!-- Replace the src attribute with the actual path to your resume PDF -->
-                <iframe src="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" title="Resume"></iframe>
-                <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" download>Download Resume</a>
+            <div class="project-info">
+              <h3>Project Gamma</h3>
+              <p>Created a scalable API for mobile applications, reducing server response time by 25%.</p>
             </div>
-        </section>
-    </div>
+          </div>
+          <!-- Add more project cards as needed -->
+        </div>
+      </div>
+    </section>
 
-    <!-- External JavaScript -->
-    <script src="script.js"></script>
+    <!-- Freelance Projects Section -->
+    <section id="freelance-projects">
+      <div class="projects-container">
+        <h2>Freelance Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-slider">
+              <img src="first1.jpg" alt="Project Alpha Image 1" class="active">
+              <img src="first2.jpg" alt="Project Alpha Image 2">
+              <img src="first3.jpg" alt="Project Alpha Image 3">
+              <img src="first4.jpg" alt="Project Alpha Image 4">
+              <img src="first5.jpg" alt="Project Alpha Image 5">
+            </div>
+            <div class="project-info">
+              <h3>Driver Trip Planning & Optimization</h3>
+              <p>
+                I created a web application to automate assigning and optimizing driver trips replacing a manual process of verifying driver availability, addresses, and travel times.
+              </p>
+              <h4>Key Features</h4>
+              <ul>
+                <li>
+                  <strong>A Real-Time Traffic Integration:</strong> Automatically calculates precise travel durations
+                </li>
+                <li>
+                  <strong>Real-Time Maps &amp; Traffic:</strong> Integrates mapping APIs and live traffic data to accurately calculate travel durations
+                </li>
+                <li>
+                  <strong>Route Optimization:</strong> Dynamically schedules trips to minimize downtime and conflicts.
+                </li>
+                <li>
+                  <strong>Feasibility Checks:</strong> Consolidates trips efficiently to minimize downtime.
+                </li>
+              </ul>
+              <p>
+                This solution drastically reduced planning time and boosted overall scheduling accuracy.
+              </p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-slider">
+              <img src="freelance2-1.jpg" alt="E-commerce Platform Image 1" class="active">
+              <img src="freelance2-2.jpg" alt="E-commerce Platform Image 2">
+              <img src="freelance2-3.jpg" alt="E-commerce Platform Image 3">
+            </div>
+            <div class="project-info">
+              <h3>E-commerce Platform</h3>
+              <p>Built an online store with integrated payment gateways and inventory management, increasing sales by 40%.</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-slider">
+              <img src="freelance3-1.jpg" alt="Blog Website Image 1" class="active">
+              <img src="freelance3-2.jpg" alt="Blog Website Image 2">
+              <img src="freelance3-3.jpg" alt="Blog Website Image 3">
+            </div>
+            <div class="project-info">
+              <h3>Tech Blog</h3>
+              <p>Developed a responsive blog website using WordPress and customized themes, attracting over 10k monthly visitors.</p>
+            </div>
+          </div>
+          <!-- Add more project cards as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <div class="inner-container">
+          <div class="resume-container">
+            <!-- Removed extra double-quote after the src attribute -->
+            <iframe src="DhanunjayaRao_CV.pdf#zoom=100" title="Resume" scrolling="yes"></iframe>
+          </div>
+        </div>
+      </section>
+  </div>
+
+  <!-- External JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>
