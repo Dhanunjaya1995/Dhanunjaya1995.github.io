@@ -245,17 +245,32 @@ function initProjectSliders() {
   const projectSliders = document.querySelectorAll('.project-slider');
 
   projectSliders.forEach(slider => {
+    // If the slider is inside the "company-projects" section, do not start auto-sliding.
+    if (slider.closest('#company-projects')) {
+      // Ensure only the first image is visible.
+      const images = slider.querySelectorAll('img');
+      images.forEach((img, index) => {
+        if (index === 0) {
+          img.classList.add('active');
+        } else {
+          img.classList.remove('active');
+        }
+      });
+      return; // Skip setting up the slider interval.
+    }
+
+    // For freelance projects, set up the auto slider.
     const images = slider.querySelectorAll('img');
     let currentIndex = 0;
 
-    // Function to show next image
+    // Function to show the next image.
     const showNextImage = () => {
       images[currentIndex].classList.remove('active');
       currentIndex = (currentIndex + 1) % images.length;
       images[currentIndex].classList.add('active');
     };
 
-    // Initialize the first image as active
+    // Initialize the first image as active.
     images.forEach((img, index) => {
       if (index !== 0) {
         img.classList.remove('active');
@@ -264,7 +279,7 @@ function initProjectSliders() {
       }
     });
 
-    // Set interval to change images every 4 seconds (4000ms)
+    // Set interval to change images every 4 seconds (4000ms).
     setInterval(showNextImage, 4000);
   });
 }
