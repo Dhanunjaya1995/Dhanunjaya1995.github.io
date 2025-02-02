@@ -111,7 +111,7 @@ const expData = [
 
   {
     yearStart: "October, 2021 - March, 2023",
-    image: "aspiag.JPG",
+    image: "aspiag.jpg",
     title: "Data Analytics Engineer, Alten, Dematic DIQ (Aspiag Project)",
     description: `
 1) Managed the data pipeline between ASPIAG (Despar) and Dematic using Dematic IQ software and Data Factory on Databricks, ensuring efficient data flow and processing. Implemented ETL workflows with Node-Red and Data Factory, streamlining extraction, transformation, and loading operations. Developed custom Oracle SQL views and procedures while integrating Python and PySpark to enhance data analysis and automation. 
